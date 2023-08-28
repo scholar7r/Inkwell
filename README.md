@@ -6,4 +6,4 @@ Issue:
 
 - [ ] hidden in front-matter to control display this article in index or not
 
-- [ ] Article's meta information should be improved (delimit)
+- [x] Article's meta information should be improved (delimit)

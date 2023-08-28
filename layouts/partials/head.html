@@ -1,10 +1,26 @@
 <head>
   <meta name="charset" content="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ .Title }}</title>
+  {{- with .Site.Params.author }}
+  <meta name="author" content="{{ . }}">
+  {{- end -}}
+  {{- with or .Keywords .Site.Params.keywords }}
+  <meta name="keywords" content="{{ delimit . ", " }}">
+  {{- end -}}
+  {{- with or .Description .Site.Params.description }}
+  <meta name="description" content="{{ . }}">
+  {{ end -}}
+  <title>
+  {{- if .IsPage -}}
+    {{- .Title }} | {{ .Site.Title -}}
+  {{- else -}}
+    {{- .Site.Title -}}
+  {{- end -}}
+  </title>
+  <link rel="icon" href="{{ .Site.Params.favicon }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  {{ range .Site.Params.vendor.stylesheets }}
+  {{- range .Site.Params.vendor.stylesheets }}
   <link rel="stylesheet" href="{{ . }}" />
-  {{ end }}
+  {{- end -}}
 </head>

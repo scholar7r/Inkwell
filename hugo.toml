@@ -1,4 +1,13 @@
 # ===
+# === Basics
+# ===
+[params]
+favicon = '/favicon.png'
+author = 'Scholar 7r'
+keywords = ["Aa", "Bb", "Cc"]
+description = 'AaBbCc'
+
+# ===
 # === Header
 # ===
 [params.header]
