@@ -1,0 +1,5 @@
+toc = 'Table of Contents'
+in_category = 'In {{ . }}'
+[pagination]
+prev = 'Previous'
+next = "Next"

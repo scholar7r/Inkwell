@@ -1,0 +1,10 @@
+<div class="articles article-entry content mb-6">
+  {{ range .Paginator.Pages }}
+  <div class="article-wrapper">
+    <h2 class="title article-title is-size-1 is-size-2-mobile mt-6">
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h2>
+    <p class="summary">{{ .Summary }}</p>
+  </div>
+  {{ end }}
+</div>

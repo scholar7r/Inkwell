@@ -1,0 +1,6 @@
+{{ if gt (len .TableOfContents) 32 }}
+<div class="toc content is-hidden-mobile mb-6">
+  <p class="toc-label mb-2">{{ T "toc" }}</p>
+  {{ .TableOfContents }}
+</div>
+{{ end }}

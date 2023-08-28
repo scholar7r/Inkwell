@@ -1,0 +1,18 @@
+{{ if gt .Paginator.TotalPages 1 }}
+<nav class="pagination mb-6">
+  {{ T "menu.home" }}
+  <a href="{{ if .Paginator.HasPrev }}{{ $.Paginator.Prev.URL }}{{ end }}" class="pagination-previous {{ if not .Paginator.HasPrev }}is-hidden is-hidden-mobile{{ end }}">{{ T "pagination.prev" }}</a>
+  <a href="{{ if .Paginator.HasNext }}{{ $.Paginator.Next.URL }}{{ end }}" class="pagination-next {{ if not .Paginator.HasNext }}is-hidden is-hidden-mobile{{ end }}">{{ T "pagination.next" }}</a>
+  <ul class="pagination-list is-hidden-mobile">
+    {{ range $.Paginator.Pagers }}
+    <li>
+      {{ if eq . $.Paginator }}
+      <a href="{{ .URL }}" class="pagination-link is-current">{{ .PageNumber }}</a>
+      {{ else }}
+      <a href="{{ .URL }}" class="pagination-link">{{ .PageNumber }}</a>
+      {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+</nav>
+{{ end }}

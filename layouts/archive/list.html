@@ -1,0 +1,24 @@
+{{ define "content" }}
+<div class="hero has-text-centered mb-6">
+  {{ if .Title }}
+  <h1 class="title is-size-1-mobile">{{ .Title }}</h1>
+  {{ end }}
+</div>
+
+<div class="article-entry content">
+  {{ range .Site.RegularPages.GroupByDate  "2006" }}
+  <h2 class="title article-title is-size-1 is-size-2-mobile mt-4">{{ .Key }}</h2>
+  <div class="article-wrapper">
+    {{ range .Pages }}
+    <ul>
+      <li>
+        <h3 class="title article-title">
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </h3>
+      </li>
+    </ul>
+    {{ end }}
+  </div>
+  {{ end }}
+</div>
+{{ end }}
