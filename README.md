@@ -6,4 +6,8 @@ Issue:
 
 - [ ] hidden in front-matter to control display this article in index or not
 
-- [x] Article's meta information should be improved (delimit)
+- [ ] Article's meta information should be improved (delimit)
+
+- [ ] Mobile device display
+
+- [ ] Dark mode

@@ -3,9 +3,9 @@
 # ===
 [params]
 favicon = '/favicon.png'
-author = 'Scholar 7r'
-keywords = ["Aa", "Bb", "Cc"]
-description = 'AaBbCc'
+author = ''
+keywords = []
+description = ''
 
 # ===
 # === Header
@@ -13,24 +13,24 @@ description = 'AaBbCc'
 [params.header]
 logoText = 'Inkwell'
 links = [
-  { label = '归档', link = '/archives' },
-  { label = '分类', link = '/categories' }
+  { label = 'Archives', link = '/archives' },
+  { label = 'Categories', link = '/categories' }
 ]
 
 # ===
 # === Article
 # ===
 [params.hero]
-title = 'Scholar 7r 知识库'
-subtitle = '喧闹任其喧闹，自有我自为之，我自风情万种，与世无争。'
+title = 'Inkwell demo'
+subtitle = 'Welcome to Inkwell'
 
 [params.hero.custom]
 enableCustomButton = false
-label = '阅读'
+label = 'readmore'
 link = '/about'
 
 [params.article]
-timeFormat = '2006 年 01 月 02 日'
+timeFormat = '2006-01-02'
 
 [params.toc]
 enableSmartTOC = true
@@ -38,8 +38,8 @@ enableSmartTOC = true
 [params.footer]
 # Inkwell allow you to use icons from font awesome, before you have to make sure that there are font awesome in vendor
 social = [
-  { icon = 'fab fa-x-twitter', link = 'https://x.com/scholar7r' },
-  { icon = 'fab fa-github', link = 'https://github.com/scholar7r' },
+  { icon = 'fab fa-x-twitter', link = 'https://x.com/' },
+  { icon = 'fab fa-github', link = 'https://github.com/' },
   { icon = 'fab fa-creative-commons', link = 'https://creativecommons.org/licenses/by-sa/4.0/' }
 ]
 

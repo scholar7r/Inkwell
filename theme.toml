@@ -4,7 +4,7 @@
 name = "Inkwell"
 license = "MIT"
 licenselink = "https://github.com/scholar7r/inkwell/blob/master/LICENSE"
-description = ""
+description = "Retro, clean and elegant theme for Hugo."
 homepage = "https://github.com/scholar7r/inkwell/"
 tags = []
 features = []
