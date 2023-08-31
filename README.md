@@ -7,3 +7,4 @@
 - [ ] hidden in front-matter to control display this article in index or not
 - [ ] Article's meta information should be improved
 - [ ] Dark mode
+- [ ] A example site
