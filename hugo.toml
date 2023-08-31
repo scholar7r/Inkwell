@@ -61,5 +61,6 @@ scripts = [
   'https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js',
   'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js',
   'https://kit.fontawesome.com/823a96a1b9.js',
-  '/js/navbar.js'
+  '/js/navbar.js',
+  '/js/toc.js'
 ]
