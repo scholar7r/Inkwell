@@ -1,0 +1,5 @@
+toc = '目录'
+in_category = '{{ . }}'
+[pagination]
+prev = '上一页'
+next = '下一页'

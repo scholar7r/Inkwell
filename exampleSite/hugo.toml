@@ -1,4 +1,47 @@
 # ===
+# === Hugo Configure
+# ===
+# The absolute URL of your published site
+baseURL = 'https://scholar7r.cn/'
+
+# Language code in html tag
+languageCode = 'en-US'
+
+# Site title
+title = 'Inkwell'
+
+# Theme for whole site
+theme = 'inkwell'
+
+# Auto-detect Chinese / Japanese / Korean Languages in the content
+hasCJKLanguage = true
+
+# Content without language indicator will default to this language
+defaultContentLanguage = 'en'
+
+# Delete the hugo meta information from head
+disableHugoGeneratorInject = true
+
+# Articles per page
+paginate = 8
+
+# Summary length
+summaryLength = 70
+
+# Copyright which will be shown in the left of footer
+copyright = 'Powered by Inkwell & Hugo'
+
+[taxonomies]
+archive = 'archives'
+category = 'categories'
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+style = 'base16-snazzy'
+
+# ===
 # === Basics
 # ===
 [params]
