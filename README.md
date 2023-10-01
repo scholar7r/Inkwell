@@ -1,14 +1,27 @@
 ![Inkwell](exampleSite/inkwell.png)
 
-## TODO
-- [x] TOC should not display when lake of at least one title element (title should be at least level 2)
-- [x] Mobile device display
-- [x] TOC should set up a button that users can control the display of contents
-- [ ] hidden in front-matter to control display this article in index or not
-- [ ] Article's meta information should be improved
-- [ ] Dark mode
-- [ ] A example site
-- [ ] Fancybox
-- [ ] Support PWA
-- [ ] LightHouse rate to 100
-- [ ] Insite search
+<h4 align=center>Retro | Fast | Fluent | Responsive</h4>
+<p align=center>This document is still building...</p>
+
+## Table of Contents
+
+
+
+## Features
+
+- Table of Contents
+- Archive of Posts
+- Social Icons
+- Multilingual Support
+
+## Installation / Update
+
+
+
+## Taxonomy
+
+
+
+## Support Us and Thanks
+
+- All Contributors and Supporters
