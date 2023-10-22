@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .article-entry {
-  font: 400 20px var(--content-font);
+  font: 400 18px var(--content-font);
 }
 
 .title {
@@ -38,13 +38,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Hero */
+.hero {
+  padding: 30px 0;
+}
+
 .subtitle {
-  font: 400 20px var(--content-font);
+  font: 400 18px var(--content-font);
   color: var(--content-color);
 }
 
 .custom-button {
-  font: 800 18px var(--emphasis-font);
+  font: 800 16px var(--emphasis-font);
   color: var(--content-color);
 }
 /* Table of Content */
@@ -97,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .summary {
-  font: 400 20px var(--content-font);
+  font: 400 18px var(--content-font);
 }
 
 .article-entry code {

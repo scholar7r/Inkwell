@@ -1,8 +1,8 @@
 /* Inkwell Stylesheet variables */
 :root {
   /* Fonts */
-  --content-font: "Literata", "Noto Serif SC", sans-serif;
-  --emphasis-font: "Work Sans","Noto Serif SC", sans-serif;
+  --content-font: "Literata", "Noto Sans SC", sans-serif;
+  --emphasis-font: "Work Sans","Noto Sans SC", sans-serif;
   --source-code-font: "Source Code Pro" monospace;
 
   /* Colors */
