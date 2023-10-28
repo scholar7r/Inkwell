@@ -5,10 +5,10 @@
     {{ end }}
     <p class="subtitle">
       {{ if .Date }}
-        {{ .Date | time.Format .Site.Params.article.timeFormat }} /
+        {{ .Date | time.Format .Site.Params.article.timeFormat }}
       {{ end }}
       {{ if .Params.Categories }}
-        {{ T "in_category" .Params.Categories }}
+        / {{ T "in_category" .Params.Categories }}
       {{ end }}
     </p>
   </div>
@@ -16,7 +16,6 @@
     {{ partial "toc.html" . }}
   {{ end }}
   <div class="article-entry content">
-
     {{ .Content }}
   </div>
 {{ end }}

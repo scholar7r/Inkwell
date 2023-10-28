@@ -109,15 +109,19 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 15px;
 }
 
-.highlight code {
-  /* font-family: var(--source-code-font) !important; */
-  font-size: 16px;
+.highlight {
+  margin-bottom: 16px;
+  border-radius: 12px;
+}
+
+.highlight pre {
+  border-radius: 14px;
 }
 
 /* Pagination */
 .pagination {
   font-family: Literata, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .pagination-previous:focus,
