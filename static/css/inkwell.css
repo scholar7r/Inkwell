@@ -21,6 +21,10 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
+.navbar-item {
+  padding: 3em;
+}
+
 .navbar-item:hover, .navbar-item:focus {
   color: var(--accent-light) !important;
 }
