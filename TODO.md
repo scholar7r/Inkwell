@@ -3,10 +3,8 @@
 - [x] Mobile device display
 - [x] TOC should set up a button that users can control the display of contents
 - [x] Article's meta information should be improved
-- [ ] hidden in front-matter to control display this article in index or not
+- [x] A example site
 - [ ] Dark mode
-- [ ] A example site
+- [ ] hidden in front-matter to control display this article in index or not (will not support)
 - [ ] Fancybox
-- [ ] Support PWA
-- [ ] LightHouse rate to 100
 - [ ] Insite search

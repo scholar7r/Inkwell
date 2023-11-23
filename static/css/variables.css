@@ -3,9 +3,31 @@
   /* Fonts */
   --content-font: "Literata", "Noto Sans SC", sans-serif;
   --emphasis-font: "Work Sans","Noto Sans SC", sans-serif;
-  --source-code-font: "Source Code Pro" monospace;
+  --source-code-font: "Source Code Pro";
 
-  /* Colors */
-  --accent-color: #761028;
-  --content-color: #000000;
+  /* Font Size (normalSize: 16px) */
+  --normal-size: 1em;
+  --big-size: 1.125em;
+  --large-size: 1.25em;
+  --logo-size: 1.375em;
+  --title-size: 3.75em;
+
+  /* Font Weight */
+  --normal-weight: 400;
+  --bold-weight: 700;
+  --bolder-weight: 800;
+
+  /* Light Colors */
+  --bg-light: #FFFFFF;
+  --content-light: #000000;
+  --container-light: #D9D9D9;
+  --on-container-light: #4A4A4A;
+  --accent-light: #761028;
+
+  /* Dark Colors */
+  --bg-dark: #000000;
+  --content-dark: #FFFFFF;
+  --container-dark: ;
+  --on-container-dark: ;
+  --accent-dark: ;
 }

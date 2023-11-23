@@ -6,7 +6,7 @@
 </div>
 
 <div class="article-entry content">
-  {{ range .Site.RegularPages.GroupByDate  "2006" }}
+  {{ range .Site.RegularPages.GroupByDate "2006" }}
   <h2 class="title article-title is-size-2 is-size-3-mobile mt-4">{{ .Key }}</h2>
   <div class="article-wrapper">
     {{ range .Pages }}
