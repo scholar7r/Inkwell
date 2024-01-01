@@ -1,21 +1,21 @@
-{{ define "content" }}
+{{- define "content" -}}
   <div class="hero has-text-centered mb-6">
-    {{ if .Title }}
-    <h1 class="title is-size-2-mobile">{{ .Title }}</h1>
-    {{ end }}
+    {{- if .Title -}}
+    <h1 class="title is-size-2-mobile">{{- .Title -}}</h1>
+    {{- end -}}
     <p class="subtitle">
-      {{ if .Date }}
-        {{ .Date | time.Format .Site.Params.article.timeFormat }}
-      {{ end }}
-      {{ if .Params.Categories }}
-        / {{ T "in_category" .Params.Categories }}
-      {{ end }}
+      {{- if .Date -}}
+        {{- .Date | time.Format .Site.Params.article.timeFormat -}}
+      {{- end -}}
+      {{- if .Params.Categories -}}
+        / {{- T "in_category" .Params.Categories -}}
+      {{- end -}}
     </p>
   </div>
-  {{ if .Site.Params.toc.enableSmartTOC }}
-    {{ partial "toc.html" . }}
-  {{ end }}
+  {{- if .Site.Params.toc.enableSmartTOC -}}
+    {{- partial "toc.html" . -}}
+  {{- end -}}
   <div class="article-entry content">
-    {{ .Content }}
+    {{- .Content -}}
   </div>
-{{ end }}
+{{- end -}}

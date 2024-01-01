@@ -1,9 +1,9 @@
 <div class="hero has-text-centered mb-6">
-  <h2 class="title is-size-2-mobile">{{ .Site.Params.hero.title }}</h2>
-  <p class="subtitle">{{ .Site.Params.hero.subtitle }}</p>
-  {{ if .Site.Params.hero.custom.enableCustomButton }}
+  <h1 class="title">{{- .Site.Params.hero.title -}}</h1>
+  <p class="subtitle">{{- .Site.Params.hero.subtitle -}}</p>
+  {{- if .Site.Params.hero.custom.enableCustomButton -}}
   <div class="custom">
-    <a href="{{ .Site.Params.hero.custom.link }}" class="custom-button">{{ .Site.Params.hero.custom.label }}</a>
+    <a href="{{- .Site.Params.hero.custom.link -}}" class="custom-button">{{- .Site.Params.hero.custom.label -}}</a>
   </div>
-  {{ end }}
+  {{- end -}}
 </div>

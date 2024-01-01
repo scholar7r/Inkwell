@@ -1,15 +1,15 @@
 <footer class="footer">
   <div class="columns content">
     <div class="copyright column has-text-left has-text-centered-mobile">
-      {{ .Site.Copyright | safeHTML }}
+      {{- .Site.Copyright | safeHTML -}}
     </div>
     <div class="column is-hidden-mobile"></div>
     <div class="social column has-text-right has-text-centered-mobile">
-      {{ range .Site.Params.footer.social }}
+      {{- range .Site.Params.footer.social -}}
       <a href="{{ .link }}" class="ml-3">
         <i class="{{ .icon }}"></i>
       </a>
-      {{ end }}
+      {{- end -}}
     </div>
   </div>
 </footer>

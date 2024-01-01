@@ -1,8 +1,8 @@
-{{ if gt (len .TableOfContents) 32 }}
+{{- if gt (len .TableOfContents) 32 -}}
 <div class="toc content is-hidden-mobile mb-4">
   <p id="TocToggle" class="toc-label mb-0">
-    {{ T "toc" }}
+    {{- T "toc" -}}
   </p>
-  {{ .TableOfContents }}
+  {{- .TableOfContents -}}
 </div>
-{{ end }}
+{{- end -}}

@@ -11,5 +11,5 @@ features = []
 min_version = "0.114.0"
 
 [author]
-  name = "Scholar 7r"
+  name = "Scholar 7r <scholar7r@outlook.com>"
   homepage = "https://scholar7r.cn/"

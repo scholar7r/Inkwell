@@ -1,25 +1,25 @@
-{{ define "content" }}
+{{- define "content" -}}
 <div class="hero has-text-centered mb-6">
-  {{ if .Title }}
-  <h1 class="title is-size-2-mobile">{{ .Title }}</h1>
-  {{ end }}
+  {{- if .Title -}}
+  <h1 class="title">{{- .Title -}}</h1>
+  {{- end -}}
 </div>
 <div class="article-entry content">
-  {{ range .Pages }}
-    <h2 class="title article-title is-size-2 is-size-3-mobile mt-4">
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
+  {{- range .Pages -}}
+  <h2 class="title article-title mt-4">
+    <a href="{{- .Permalink -}}">{{- .Title -}}</a>
   </h2>
-  <div class="article-wrapper">
-    {{ range .Pages }}
+  <div class="article-item">
+    {{- range .Pages -}}
     <ul>
       <li>
         <h3 class="title article-title">
-          <a href="{{ .Permalink }}">{{ .Title }}</a>
+          <a href="{{- .Permalink -}}">{{- .Title -}}</a>
         </h3>
       </li>
     </ul>
-    {{ end }}
+    {{- end -}}
   </div>
-  {{ end }}
+  {{- end -}}
 </div>
-{{ end }}
+{{- end -}}
