@@ -1,0 +1,56 @@
+// global
+body {
+  font-family: $main-font-family;
+  font-size: $main-font-size;
+  line-height: $main-line-height;
+  color: $text-color;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
+  font-weight: $weight-ultrabold!important;
+  color: $heading-text-color;
+}
+
+h1 {
+  font-size: $h1-font-size!important;
+}
+
+h2 {
+  font-size: $h2-font-size!important;
+}
+
+h3 {
+  font-size: $h3-font-size!important;
+}
+
+h4 {
+  font-size: $h4-font-size!important;
+}
+
+h5 {
+  font-size: $h5-font-size!important;
+}
+
+h6 {
+  font-size: $h6-font-size!important;
+}
+
+blockquote {
+  border-radius: 1em;
+}
+
+code {
+  font-family: $code-font-family;
+  font-size: $code-font-size;
+  border-radius: 1em;
+}
+
+.highlight {
+  margin-bottom: .75em;
+
+  pre {
+    border-radius: 1em;
+  }
+}

@@ -1,0 +1,13 @@
+// hero
+.hero {
+  padding: 2.65em 0;
+}
+
+.custom-button {
+  color: $text-color;
+  font-size: $code-font-size;
+}
+
+.custom-button:hover {
+  color: $accent-color;
+}

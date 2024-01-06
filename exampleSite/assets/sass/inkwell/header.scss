@@ -1,0 +1,68 @@
+// header
+.logo {
+  font-weight: $font-weight-ultra-bold;
+
+  a:hover {
+    color: $accent-color;
+  }
+
+  a:focus {
+    color: $accent-color;
+  }
+
+  a:focus-within {
+    background-color: transparent;
+    color: $accent-color;
+  }
+
+  a:focus-visible {
+    outline: none;
+  }
+}
+
+.navbar-end > .is-active > .navbar-item {
+  padding: 3em;
+}
+
+.navbar-item:hover, .navbar-item:focus {
+  color: $accent-color;
+}
+
+.navbar-end {
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+
+  .is-active {
+    border-radius: 1em;
+  }
+}
+
+.navbar-burger:hover {
+  border-radius: 1em;
+}
+
+.link {
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    color: $accent-color!important;
+  }
+
+  &:focus {
+    color: $accent-color!important;
+  }
+
+  &:focus-within {
+    background-color: transparent;
+    color: $accent-color!important;
+  }
+
+  &:focus-visible {
+    outline: none!important;
+  }
+}

@@ -1,0 +1,29 @@
+// article
+.article-item {
+  .title {
+    a {
+      color: $text-color;
+    
+      &:hover {
+        color: $accent-color;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.article-title {
+  color: $text-color!important;
+}
+
+.article-title > a {
+  color: $text-color;
+
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.subtitle {
+  font-size: $main-font-size;
+}

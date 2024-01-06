@@ -1,227 +1,36 @@
-$primary-bg-color: #ffffff;
-$secondary-bg-color: #4a4a4a;
-$container-bg-color: #d9d9d9;
-$header-bg-color: #ffffff;
-$footer-bg-color: #ffffff;
-$content-bg-color: #ffffff;
-$text-color: #000000;
-$heading-text-color: #000000;
-$meta-text-color: #000000;
-$link-color: #000000;
-$link-hover-color: #761028;
-$accent-color: #761028;
+/* Inkwell Stylesheet
+ * ---
+ * author: scholar7r <scholar7r@outlook.com>
+ *
+ * This file inlcudes fonts and any other stylesheet files for Inkwell,
+ * and it's component library bulma.
+ * Inkwell's design stylesheet should be above all to make sure the that
+ * all of style can be rendered correctly. Bulma custom file and Bulma
+ * sass library should be bottom to insure it accomplish low-case style.
+ */
 
-$main-line-height: 1.5;
-$main-font-family: "Literata", "Noto Serif SC", sans-serif;
-$main-font-size: 1em;
+@charset "utf-8";
 
-$heading-font-family: "Work Sans", "Noto Serif SC", sans-serif;
-$h1-font-size: 2.375em;
-$h2-font-size: 1.75em;
-$h3-font-size: 1.625em;
-$h4-font-size: 1.5em;
-$h5-font-size: 1.25em;
-$h6-font-size: 1.125em;
+// fonts from google fonts static resources site
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,300;0,7..72,400;0,7..72,500;0,7..72,600;0,7..72,700;0,7..72,800;0,7..72,900;1,7..72,300;1,7..72,400;1,7..72,500;1,7..72,600;1,7..72,700;1,7..72,800;1,7..72,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-$code-font-family: "Source Code Pro";
-$code-font-size: .875em;
+// colorscheme.scss defines light and dark colorscheme via bulma
+@import "./inkwell/colorscheme.scss";
 
-$font-weight-light: 300;
-$font-weight-normal: 400;
-$font-weight-medium: 500;
-$font-weight-semi-bold: 600;
-$font-weight-bold: 700;
-$font-weight-extra-bold: 800;
-$font-weight-ultra-bold: 900;
+// inkwell scss for each part
+@import "./inkwell/variables.scss";
+@import "./inkwell/basic.scss";
+@import "./inkwell/header.scss";
+@import "./inkwell/hero.scss";
+@import "./inkwell/toc.scss";
+@import "./inkwell/articles.scss";
+@import "./inkwell/pagination.scss";
+@import "./inkwell/footer.scss";
 
+// bulma customize
+@import "./customize.scss";
+@import "./bulma/bulma.sass";
 
-// global
-body {
-  font-family: $main-font-family;
-  font-size: $main-font-size;
-  line-height: $main-line-height;
-  color: $text-color;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: $heading-font-family;
-  color: $heading-text-color;
-}
-
-h1 {
-  font-size: $h1-font-size;
-}
-
-h2 {
-  font-size: $h2-font-size;
-}
-
-h3 {
-  font-size: $h3-font-size;
-}
-
-h4 {
-  font-size: $h4-font-size;
-}
-
-h5 {
-  font-size: $h5-font-size;
-}
-
-h6 {
-  font-size: $h6-font-size;
-}
-
-
-code {
-  font-family: $code-font-family;
-  font-size: $code-font-size;
-  border-radius: 1em;
-}
-
-.highlight {
-  margin-bottom: .75em;
-
-  pre {
-    border-radius: 1em;
-  }
-}
-
-blockquote {
-  border-radius: 1em;
-}
-
-// header
-.logo {
-  font-weight: $font-weight-ultra-bold;
-
-  a:hover {
-    color: $accent-color;
-  }
-}
-
-.navbar-end > .is-active > .navbar-item {
-  padding: 3em;
-}
-
-.navbar-item:hover, .navbar-item:focus {
-  color: $accent-color;
-}
-
-.navbar-end {
-  position: absolute;
-  right: 0;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.link {
-  height: 3em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &:hover {
-    color: $accent-color!important;
-  }
-}
-
-// hero
-.hero {
-  padding: 2.65em 0;
-}
-
-.custom-button {
-  color: $text-color;
-  font-size: $code-font-size;
-}
-
-.custom-button:hover {
-  color: $accent-color;
-}
-
-// toc
-.toc {
-  background-color: $container-bg-color;
-  border-radius: 1em;
-  padding: .75em;
-  font-family: $heading-font-family;
-  font-weight: $font-weight-bold;
-}
-
-.toc-label {
-  cursor: pointer;
-}
-
-.toc > nav ul:first-child {
-  margin-left: 0;
-}
-
-.toc > nav ul {
-  list-style: none;
-  font-family: $main-font-family;
-}
-
-.toc > nav ul > li > a {
-  color: $accent-color;
-}
-
-// article
-.article-item {
-  .title {
-    a {
-      color: $text-color;
-    
-      &:hover {
-        color: $accent-color;
-        text-decoration: underline;
-      }
-    }
-  }
-}
-
-.article-title {
-  color: $text-color!important;
-}
-
-.article-title > a {
-  color: $text-color;
-
-  &:hover {
-    color: $accent-color;
-  }
-}
-
-.subtitle {
-  font-size: $main-font-size;
-}
-
-// pagination
-.pagination {
-  .pagination-previous:focus,
-  .pagination-next:focus,
-  .pagination-list li > a:focus {
-    border-color: $accent-color;
-  }
-
-  .pagination-list li > .is-current {
-    background-color: $accent-color;
-    border-color: $accent-color;
-  }
-}
-
-// footer
-.footer {
-  background-color: $primary-bg-color;
-  padding: 4.25em 0;
-}
-
-.copyright, .social {
-  a {
-    color: $text-color;
-    
-    &:hover {
-      color: $accent-color;
-    }
-  }
-}

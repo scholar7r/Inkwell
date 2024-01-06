@@ -1,0 +1,15 @@
+// pagination
+.pagination {
+  .pagination-previous:focus,
+  .pagination-next:focus,
+  .pagination-list li > a:focus {
+    border-color: $accent-color;
+  }
+
+  .pagination-list li > .is-current {
+    background-color: $accent-color;
+    border-color: $accent-color;
+  }
+}
+
+
