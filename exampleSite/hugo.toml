@@ -2,13 +2,13 @@
 # === Hugo Configure
 # ===
 # The absolute URL of your published site
-baseURL = 'https://scholar7r.cn/'
+baseURL = 'https://example.com/'
 
 # Language code in html tag
 languageCode = 'en-US'
 
 # Site title
-title = 'Inkwell'
+title = 'Example'
 
 # Theme for whole site
 theme = 'inkwell'
@@ -29,7 +29,7 @@ paginate = 8
 summaryLength = 70
 
 # Copyright which will be shown in the left of footer
-copyright = 'Powered by Inkwell & Hugo'
+copyright = 'Powered by <a href="https://github.com/scholar7r/Inkwell">Inkwell</a> & Hugo'
 
 [taxonomies]
 archive = 'archives'
@@ -46,15 +46,15 @@ style = 'base16-snazzy'
 # ===
 [params]
 favicon = '/favicon.png'
-author = ''
-keywords = []
-description = ''
+author = 'Your name'
+keywords = ['Hugo', 'Inkwell']
+description = 'A personal Hugo blog with Inkwell theme'
 
 # ===
 # === Header
 # ===
 [params.header]
-logoText = 'Inkwell'
+logoText = 'Example'
 links = [
   { label = 'Archives', link = '/archives' },
   { label = 'Categories', link = '/categories' }
@@ -64,19 +64,14 @@ links = [
 # === Article
 # ===
 [params.hero]
-title = 'Inkwell demo'
-subtitle = 'Welcome to Inkwell'
-
-[params.hero.custom]
-enableCustomButton = false
-label = 'readmore'
-link = '/about'
+title = 'Example'
+subtitle = 'A personal Hugo blog with Inkwell theme'
 
 [params.article]
 timeFormat = '2006-01-02'
 
 [params.toc]
-enableSmartTOC = true
+enableToc = true
 
 [params.footer]
 # Inkwell allow you to use icons from font awesome, before you have to make sure that there are font awesome in vendor
@@ -93,17 +88,7 @@ social = [
 # Register the required static resource files (including your custom ones) in the vendor block, Inkwell will
 # automatically pull these resource files and render them
 [params.vendor]
-stylesheets = [
-  'https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,700&family=Work+Sans:wght@900&family=Source+Code+Pro&display=swap',
-  'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css',
-  'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css',
-  '/css/variables.css',
-  '/css/inkwell.css'
-]
 scripts = [
-  'https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js',
-  'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js',
   'https://kit.fontawesome.com/823a96a1b9.js',
-  '/js/navbar.js',
-  '/js/toc.js'
+  '/js/navbar.js'
 ]
