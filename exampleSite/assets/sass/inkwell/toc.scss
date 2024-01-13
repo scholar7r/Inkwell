@@ -3,12 +3,13 @@
   background-color: $container-bg-color;
   border-radius: 1em;
   padding: .75em;
-  font-family: $heading-font-family;
-  font-weight: $font-weight-bold;
+  font-family: $family-primary;
+  font-weight: $weight-ultrabold;
 }
 
 .toc-label {
   cursor: pointer;
+  font-family: $family-secondary;
 }
 
 .toc > nav ul:first-child {
@@ -17,7 +18,7 @@
 
 .toc > nav ul {
   list-style: none;
-  font-family: $main-font-family;
+  font-weight: $weight-normal;
 }
 
 .toc > nav ul > li > a {

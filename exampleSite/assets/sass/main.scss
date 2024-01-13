@@ -7,23 +7,23 @@
  * Inkwell's design stylesheet should be above all to make sure the that
  * all of style can be rendered correctly. Bulma custom file and Bulma
  * sass library should be bottom to insure it accomplish low-case style.
- * And I would like to notice that, you only need to write @charset in
- * this main.scss file, because it will call all style files inneed.:)
  */
 
 @charset "utf-8";
 
-// fonts from google fonts static resources site
-// todo: some useless font weight should be deleted
+// fonts
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,300;0,7..72,400;0,7..72,500;0,7..72,600;0,7..72,700;0,7..72,800;0,7..72,900;1,7..72,300;1,7..72,400;1,7..72,500;1,7..72,600;1,7..72,700;1,7..72,800;1,7..72,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-// colorscheme.scss defines light and dark colorscheme via bulma
+// bulma customize
+@import "./customize.scss";
+
+// light / dark colorscheme
 @import "./inkwell/colorscheme.scss";
 
-// inkwell scss for each part
+// Inkwell style parts
 @import "./inkwell/variables.scss";
 @import "./inkwell/basic.scss";
 @import "./inkwell/header.scss";
@@ -33,7 +33,6 @@
 @import "./inkwell/pagination.scss";
 @import "./inkwell/footer.scss";
 
-// bulma customize
-@import "./customize.scss";
+// bulma framework
 @import "./bulma/bulma.sass";
 
