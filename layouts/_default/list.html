@@ -1,25 +1,26 @@
 {{- define "content" -}}
+{{- $categories := .Pages -}}
 <div class="hero has-text-centered mb-6">
-  {{- if .Title -}}
-  <h1 class="title">{{- .Title -}}</h1>
-  {{- end -}}
+  {{- with .Title -}}<h1 class="title">{{- . -}}</h1>{{- end -}}
 </div>
+
 <div class="article-entry content">
-  {{- range .Pages -}}
-  <h2 class="title article-title mt-4">
-    <a href="{{- .Permalink -}}">{{- .Title -}}</a>
-  </h2>
-  <div class="article-item">
-    {{- range .Pages -}}
-    <ul>
-      <li>
-        <p class="article-title">
-          <a href="{{- .Permalink -}}">{{- .Title -}}</a>
-        </p>
-      </li>
-    </ul>
+  {{- range $categories -}}
+    {{- $category := .Title -}}
+    {{- $pages := .Pages -}}
+    {{- if .IsPage -}}
+      <ul><li><a href="{{- .Permalink -}}" class="article-title">{{.Title}}</a></li></ul>
+    {{- else -}}
+      <h2><a href="{{- .Permalink -}}" class="article-title">{{- $category -}}</a></h2>
     {{- end -}}
-  </div>
+
+    {{- if not .IsPage -}}
+      <ul>
+        {{- range $pages -}}
+          <li><a href="{{- .Permalink -}}" class="article-title">{{- .Title -}}</a></li>
+        {{- end -}}
+      </ul>
+    {{- end -}}
   {{- end -}}
-</div>
+  </div>
 {{- end -}}
