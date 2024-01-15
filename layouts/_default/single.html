@@ -1,24 +1,27 @@
 {{- define "content" -}}
+  {{- $timeFormat := .Site.Params.article.timeFormat -}}
+  {{- $enableToc := .Site.Params.toc.enableToc -}}
+  {{- $enableGiscus := .Site.Params.giscus.enableGiscus -}}
   <div class="hero has-text-centered mb-6">
     {{- if .Title -}}
-    <h1 class="title">{{- .Title -}}</h1>
+      <h1 class="title">{{- .Title -}}</h1>
     {{- end -}}
     <p class="subtitle">
       {{- if .Date -}}
-        {{- .Date | time.Format .Site.Params.article.timeFormat -}}
+        {{- .Date | time.Format $timeFormat -}}
       {{- end -}}
       {{- if .Params.Categories -}}
         / {{- T "in_category" .Params.Categories -}}
       {{- end -}}
     </p>
   </div>
-  {{- if .Site.Params.toc.enableToc -}}
+  {{- if $enableToc -}}
     {{- partial "toc.html" . -}}
   {{- end -}}
   <div class="article-entry content">
     {{- .Content -}}
   </div>
-  {{- if .Site.Params.giscus.enableGiscus -}}
+  {{- if $enableGiscus -}}
     {{- template "_internal/comment/giscus.html" . -}}
   {{- end -}}
 {{- end -}}

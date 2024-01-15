@@ -1,3 +1,4 @@
+{{- $social := .Site.Params.footer.social -}}
 <footer class="footer">
   <div class="columns content">
     <div class="copyright column has-text-left has-text-centered-mobile">
@@ -5,7 +6,7 @@
     </div>
     <div class="column is-hidden-mobile"></div>
     <div class="social column has-text-right has-text-centered-mobile">
-      {{- range .Site.Params.footer.social -}}
+      {{- range $social -}}
       <a href="{{ .link }}" class="ml-3">
         <i class="{{ .icon }}"></i>
       </a>

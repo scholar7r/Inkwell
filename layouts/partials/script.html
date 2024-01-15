@@ -1,3 +1,4 @@
-{{- range .Site.Params.vendor.scripts -}}
+{{- $scripts := .Site.Params.vendor.scripts }}
+{{- range $scripts -}}
 <script src="{{- . -}}"></script>
 {{- end -}}
