@@ -73,6 +73,26 @@ timeFormat = '2006-01-02'
 [params.toc]
 enableToc = true
 
+# ===
+# === Comment
+# ===
+[params.giscus]
+enableGiscus = false
+repo=""
+repoId=""
+category="Announcements"
+categoryId=""
+mapping="pathname"
+strict="0"
+reactions="0"
+emit="0"
+inputPosition="top"
+theme="light_tritanopia"
+language="en-US"
+loading="lazy"
+
+
+
 [params.footer]
 # Inkwell allow you to use icons from font awesome, before you have to make sure that there are font awesome in vendor
 social = [
