@@ -1,19 +1,21 @@
 {{- $logoText := .Site.Params.header.logoText }}
 {{- $links := .Site.Params.header.links }}
-<nav class="navbar is-transparent mb-6">
-  <div class="logo navbar-brand">
-    <a href="/" class="navbar-item">{{- $logoText -}}</a>
-    <a class="navbar-burger" data-target="navbar">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-end">
-    <div class="navbar-menu" id="navbar">
-      {{- range $links -}}
-      <a href="{{- .link -}}" class="link navbar-item">{{- .label -}}</a>
-      {{- end -}}
+<header>
+  <nav class="navbar is-transparent mb-6">
+    <div class="logo navbar-brand">
+      <a href="/" class="navbar-item">{{- $logoText -}}</a>
+      <a class="navbar-burger" data-target="navbar">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
     </div>
-  </div>
-</nav>
+    <div class="navbar-end">
+      <div class="navbar-menu" id="navbar">
+        {{- range $links -}}
+          <a href="{{- .link -}}" class="link navbar-item">{{- .label -}}</a>
+        {{- end -}}
+      </div>
+    </div>
+  </nav>
+</header>

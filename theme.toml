@@ -6,6 +6,7 @@ license = "MIT"
 licenselink = "https://github.com/scholar7r/inkwell/blob/master/LICENSE"
 description = "Retro, clean and elegant theme for Hugo."
 homepage = "https://github.com/scholar7r/inkwell/"
+demosite = "https://scholar7r.cn/"
 tags = []
 features = []
 min_version = "0.114.0"
